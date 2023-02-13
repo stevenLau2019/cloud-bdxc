@@ -39,10 +39,18 @@
                 <scope>import</scope>
             </dependency>
             <!--nacos的管理依赖-->
-            <dependency>
+           <!-- <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>2.2.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>-->
+            <!--spring-cloud-alibaba nacos的管理依赖-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2021.0.4.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -63,6 +71,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
+
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
