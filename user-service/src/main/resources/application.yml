@@ -13,6 +13,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: HZ #集群名称
+#        ephemeral: false # 设置为非临时实例
 mybatis:
   type-aliases-package: com.bdxc.user.pojo
   configuration:

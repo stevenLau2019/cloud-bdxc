@@ -13,6 +13,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: HZ #集群名称
+#        namespace: 6757548c-a4af-4ff9-a0b4-8e307c13dad8  # 命名空间，填ID
 mybatis:
   type-aliases-package: com.bdxc.order.pojo
   configuration:
