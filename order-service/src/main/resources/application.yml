@@ -8,6 +8,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: orderService
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        cluster-name: HZ #集群名称
 mybatis:
   type-aliases-package: com.bdxc.order.pojo
   configuration:
@@ -17,12 +22,15 @@ logging:
     com.bdxc: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:10086/eureka
 ribbon:
   eager-load:
     enabled: true # 开启饥饿加载
     clients: # 指定饥饿加载的服务名称
       - userService
+userService:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡规则
