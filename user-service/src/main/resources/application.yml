@@ -6,13 +6,13 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-  application:
-    name: userService
-  cloud:
-    nacos:
-      server-addr: localhost:8848
-      discovery:
-        cluster-name: HZ #集群名称
+#  application:
+#    name: userService
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848
+#      discovery:
+#        cluster-name: HZ #集群名称
 #        ephemeral: false # 设置为非临时实例
 mybatis:
   type-aliases-package: com.bdxc.user.pojo
@@ -27,3 +27,5 @@ logging:
 #  client:
 #    service-url:
 #      defaultZone: http://127.0.0.1:10086/eureka
+#pattern:
+#  dateformat: 本地环境local
