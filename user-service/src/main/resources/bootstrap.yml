@@ -1,6 +1,6 @@
 spring:
   application:
-    name: userservice
+    name: userService
   profiles:
     active: dev # 环境
   cloud:
